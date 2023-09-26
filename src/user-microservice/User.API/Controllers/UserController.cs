@@ -26,6 +26,13 @@ namespace User.API.Controllers
         #region Public Methods
 
         [HttpPost("[action]")]
+        public async Task<IActionResult> Authenticate([FromBody] UserLoginRequestDto request)
+        {
+            var result = await _userService.AuthenticateAsync(request);
+            return StatusCode(result.StatusCode, result);
+        }
+
+        [HttpPost("[action]")]
         public async Task<IActionResult> Register([FromBody] UserRegisterRequestDto request)
         {
             var result = await _userService.RegisterAsync(request);

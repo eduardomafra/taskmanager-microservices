@@ -2,12 +2,12 @@
 {
     public class ApiResponse<T>
     {
-        public ApiResponse(bool success, T result, int statusCode, IEnumerable<string> errors = null)
+        public ApiResponse(bool success, int statusCode, T result, IEnumerable<string> errors = null)
         {
             Success = success;
-            Result = result;
             StatusCode = statusCode;
-            Errors = errors ?? new List<string>();
+            Result = result;            
+            Errors = errors;
         }
 
         public bool Success { get; set; }
