@@ -1,6 +1,6 @@
-﻿using Task.Domain.Enums;
+﻿using Domain.Enums;
 
-namespace Task.Domain.Entities
+namespace Domain.Entities
 {
     public class Task
     {

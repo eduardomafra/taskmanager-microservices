@@ -1,4 +1,4 @@
-﻿namespace Task.Domain.Enums
+﻿namespace Domain.Enums
 {
     public enum TaskPriorityEnum
     {

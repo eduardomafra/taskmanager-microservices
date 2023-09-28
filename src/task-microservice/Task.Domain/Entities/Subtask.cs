@@ -1,4 +1,4 @@
-﻿namespace Task.Domain.Entities
+﻿namespace Domain.Entities
 {
     public class Subtask
     {

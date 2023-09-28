@@ -1,7 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Task.Domain.Entities;
+﻿using Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
-namespace Task.Infrastructure.Data
+namespace Infrastructure.Data
 {
     public class TaskDbContext : DbContext
     {

@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Domain.Entities;
 
-namespace Task.Domain.Interfaces.Repositories
+namespace Domain.Interfaces.Repositories
 {
-    internal interface ITaskRepository
+    public interface ITaskRepository : IBaseRepository<Entities.Task>
     {
     }
 }
