@@ -8,7 +8,7 @@ namespace Domain.Entities
         public string Name { get; set; }
         public string Description { get; set; }
         public DateTime Created { get; set; }
-        public DateTime Conclusion { get; set; }
+        public DateTime? Conclusion { get; set; }
         public TaskStatusEnum Status { get; set; }
         public TaskPriorityEnum Priority { get; set; }
         public long UserId { get; set; }

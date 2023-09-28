@@ -1,6 +1,13 @@
-﻿namespace Application.DTOs.Requests
+﻿using Domain.Enums;
+
+namespace Application.DTOs.Requests
 {
-    internal class CreateTaskRequestDto
+    public class CreateTaskRequestDto
     {
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public TaskStatusEnum Status { get; set; }
+        public TaskPriorityEnum Priority { get; set; }
+        public long UserId { get; set; }
     }
 }

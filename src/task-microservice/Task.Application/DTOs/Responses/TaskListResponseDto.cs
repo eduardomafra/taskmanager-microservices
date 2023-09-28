@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Application.DTOs.Responses
+﻿namespace Application.DTOs.Responses
 {
-    internal class TaskListResponseDto
+    public class TaskListResponseDto
     {
+        public IEnumerable<TaskResponseDto> Tasks { get; set; }
     }
 }

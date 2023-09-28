@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Domain.Enums;
 
 namespace Application.DTOs.Responses
 {
-    internal class TaskResponseDto
+    public class TaskResponseDto
     {
+        public long Id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public DateTime Created { get; set; }
+        public DateTime? Conclusion { get; set; }
+        public TaskStatusEnum Status { get; set; }
+        public TaskPriorityEnum Priority { get; set; }
     }
 }
