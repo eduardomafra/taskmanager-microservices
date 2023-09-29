@@ -6,7 +6,7 @@ namespace User.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class UserController : ControllerBase
+    public class UsersController : ControllerBase
     {
         #region Properties
 
@@ -16,7 +16,7 @@ namespace User.API.Controllers
 
         #region Constructor
 
-        public UserController(IUserService userService)
+        public UsersController(IUserService userService)
         {
             _userService = userService;
         }
